@@ -1,0 +1,54 @@
+Wymagania
+- Zainstalowany **Node.js**
+- Zainstalowany **npm**
+
+---
+
+## Instalacja
+
+W terminalu wpisz:
+
+```bash
+npm install
+
+
+Utwórz plik .env w głównym folderze projeku i wklej w nim
+
+SECRET=twoj_secret
+PEPPER=twoj_hex_pepper
+PORT=8000
+NODE_ENV=development
+
+TESTOWE DANE:
+SECRET=!@#$%^&*()_+{}|:<>?[]\;',./~`abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789
+PEPPER=a1b2c3d4e5f678901234567890abcdef1234567890abcdef1234567890abcdef12
+
+
+
+
+Aby uruchomić projekt wpisz w terminalu:
+
+node index.js
+
+
+Oraz wejdź na stronę:
+
+http://localhost:8000
+
+git remote add origin
+
+
+Admin: pierwsze stworzone konto w aplikacji staje się automatycznie administratorem
+
+
+baza danych w fazie developerskiej projektu sama się tworzy i wypełnia testowymi danymi podczas odpalenia projeku 1 raz
+
+aby usunąć bazę wpisz w terminalu:
+
+del db.sqlite
+
+
+
+
+Aplikacja oferuje różny zestaw linków do innych stron i aplikacji internetowych, użytkownicy mogą dodawać, udostępniać i usuwać dodabe przez siebie linki oraz kategorie.
+Podczas dodawania linków mamy opcję wybrania wielu kategorii - są one połączone ze sobą sposobem many to many. Admninistrator ma dostęp do wszystkich informacji oraz może je sam usuwać
